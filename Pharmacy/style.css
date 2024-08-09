@@ -1,0 +1,118 @@
+body{
+    width: 100vw;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    
+}
+.view-drug{
+    width: 100%;
+    max-width: 600px;
+}
+.drug-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.drug-name {
+    width: 100%;
+}
+
+.drug-name h2{
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.drug-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.drug-image{
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.drug-description{
+    font-size: 0.875rem;
+}
+
+.more-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.title{
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.pharmacies{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.pharmacy{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.pharmacy-image{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.pharmacy-name{
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.pharmacy-description{
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+.pharmacy-location{
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+
+
+@media (min-width: 640px) { 
+    .pharmacies{
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    }
+    
+   }
+  @media (min-width: 768px) { 
+    .pharmacies{
+        grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    }
+ 
+   }
